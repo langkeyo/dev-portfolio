@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO优化 -->
+     <meta name="description" content="前端开发石卓林的作品展示，包含Vue、React等项目案例">
+     <meta property="og:image" content="images/og-image.jpg">
+    <title>开发作品集 - 石卓林</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="sticky-nav">
+        <a href="#home" class="logo">DevProtfolio</a>
+        <div class="nav-links">
+            <a href="#projects">作品</a>
+            <a href="#skills">技能</a>
+            <a href="#contact">联系</a>
+        </div>
+    </nav>
+    <!-- 作品展示区 -->
+     <section class="section" id="projects">
+        <h2 class="section-title">我的项目</h2>
+        <div class="gallery">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="电商网站">
+                <div class="project-info">
+                    <h3>电商平台前端</h3>
+                    <p>基于Vue3+Element Plus开发</p>
+                    <button class="demo-btn">查看演示</button>
+                </div>
+            </div>
+            <!-- 更多项目卡片 -->
+        </div>
+     </section>
+     <!-- 数据分析 -->
+      <script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+      <script>
+        window.dataLayer = window.dataLayer || []
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date())
+        gtag('config', 'GA_MEASUREMENT_ID')
+      </script>
+     <script src="script.js"></script>
+</body>
+
+</html>
