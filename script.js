@@ -56,3 +56,49 @@ document.querySelectorAll('.project-card img').forEach(img => {
 document.querySelectorAll('img').forEach(img => {
     img.loading = 'lazy'
 })
+
+// 技能雷达图
+const ctx = document.getElementById('skillsRadarChart').getContext('2d')
+const skillsRadarChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+        labels: ['HTML', 'CSS', 'JavaScript', 'Vue3', 'Python', 'React'],
+        datasets: [{
+            labels: '技能熟练度',
+            data: [90, 80, 85, 80, 65, 70],
+            backgroundColor: 'rgba(46, 204, 113, 0.2)',
+            broderColor: 'rgba(46, 204, 113, 1)',
+            broderWidth: 1
+        }]
+    },
+    options: {
+        scale: {
+            ticks: {
+                beginAtZero: true
+            }
+        }
+    }
+})
+
+// 处理联系方式表单提交
+const contactForm = document.getElementById('contactForm')
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const name = document.getElementById('name').value
+    const email = document.getElementById('email').value
+    const message = document.getElementById('message').value
+
+    // 这里可以添加发送邮件或者保存数据的逻辑
+    console.log(`姓名：${name}, 邮箱：${email}, 留言：${message}`)
+    alert('感谢你的留言，我会尽快回复你！')
+    contactForm.reset()
+})
+
+// 暗色模式切换
+const darkModelToggle = document.getElementById('darkModelToggle')
+const body = document.body
+
+darkModelToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode')
+    ibody.classList.contains('dark-mode') ? darkModelToggle.textContent = '🌞' : darkModelToggle.textContent = '🌙'
+})

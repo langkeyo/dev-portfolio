@@ -130,3 +130,103 @@
         margin: 1rem 0;
     }
 }
+
+/* 联系我们部分样式 */
+#contact {
+    padding: 2rem 5%;
+    background: #f9f9f9;
+    margin-top: 2rem;
+}
+
+#contact .section-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 1.5rem;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: var(--primary-color);
+}
+
+#contactForm button {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+    background: #27ae60;
+}
+
+
+/* 暗色模式样式 */
+body.dark-mode {
+    background: var(--dark-bg);
+    color: #ecf0f1;
+}
+
+.dark-mode .sticky-nav {
+    background: #1a252f;
+}
+
+.dark-mode .project-card {
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+.dark-mode .project-info {
+    background: rgba(0, 0, 0, 0.6s);
+}
+
+/* 暗色模式下联系我们部分样式 */
+body.dark-mode #contact {
+    background-color: #34495e;
+}
+
+body.dark-mode #contact .section-title {
+    color: white;
+}
+
+body.dark-mode #contactForm input,
+body.dark-mode #contactForm textarea {
+    background: #2c3e50;
+    color: white;
+    border-color: #555;
+}
+
+body.dark-mode #contactForm input:focus,
+body.dark-mode #contactForm textarea:focus {
+    border-color: var(--primary-color);
+}
+
+body.dark-mode #contactForm button {
+    background-color: var(--primary-color);
+}
+
+body.dark-mode #contactForm button:hover {
+    background: #27ae60;
+}
