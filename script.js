@@ -83,7 +83,6 @@ const skillsRadarChart = new Chart(ctx, {
     type: 'radar',
     data: {
         datasets: [{
-            labels: '技能熟练度',
             data: [85, 85, 85, 85, 85, 80],
             backgroundColor: 'rgba(46, 204, 113, 0.2)',
             borderColor: 'rgba(46, 204, 113, 1)',
@@ -100,6 +99,15 @@ const skillsRadarChart = new Chart(ctx, {
                     display: false,
                     stepSize: 20 // 添加刻度间隔
                 }
+            }
+        },
+        plugins: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: true,
+                text: '技能熟练度'
             }
         }
     }

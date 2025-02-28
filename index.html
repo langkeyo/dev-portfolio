@@ -7,15 +7,19 @@
     <!-- SEO优化 -->
     <meta name="description" content="前端开发石卓林的作品展示，包含Vue、React等项目案例">
     <meta property="og:image" content="images/og-image.jpg">
-     <!-- 这里可以添加 CSP 安全策略 -->
+    <!-- 这里可以添加 CSP 安全策略 -->
     <title>开发作品集 - 石卓林</title>
     <link rel="stylesheet" href="style.css">
-    <!-- 兼容性增强 -->    
+    <!-- 兼容性增强 -->
     <!-- 在 Chart.js 前添加 Promise polyfill -->
-    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/promise-polyfill/8.2.0/polyfill.js" type="application/javascript"></script>
+    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/promise-polyfill/8.2.0/polyfill.js"
+        type="application/javascript"></script>
     <!-- 引入 Chart.js 库 -->
     <!-- 使用国内的 cdn -->
-    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/Chart.js/3.7.1/chart.js" type="application/javascript"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/Chart.js/3.7.1/chart.js" type="application/javascript"></script>
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/Chart.js/3.7.1/chart.js"
+        type="application/javascript"></script>
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/Chart.js/3.7.1/chart.js"
+        type="application/javascript"></script>
 </head>
 
 <body>
@@ -33,7 +37,9 @@
     <!-- 技能展示区 -->
     <section class="section" id="skills">
         <h2 class="section-title">我的技能</h2>
-        <canvas id="skillsRadarChart" width="400" height="400"></canvas>
+        <div class="chart-container">
+            <canvas id="skillsRadarChart" width="400" height="400"></canvas>
+        </div>
     </section>
 
     <!-- 作品展示区 -->

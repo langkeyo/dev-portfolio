@@ -38,6 +38,20 @@
     color: var(--primary-color);
 }
 
+/* 技能展示 */
+#skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 5%;
+}
+
+.chart-container #skillsRadarChart {
+    max-width: 600px;
+    margin: 2rem 0;
+}
+
 /* 项目画廊布局 */
 .gallery {
     display: grid;
@@ -109,6 +123,10 @@
     cursor: pointer;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 /* 响应式优化 */
 @media (max-width: 768px) {
     .nav-links {
@@ -128,6 +146,23 @@
 
     .nav-links a {
         margin: 1rem 0;
+    }
+    .chart-container {
+        width: 100%;
+        height: 100%;
+    }
+    .chart-container #skillsRadarChart {
+        max-width: 400px;
+    }
+    .mobile-menu {
+        display: block;
+       
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 
